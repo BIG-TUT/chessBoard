@@ -9,12 +9,12 @@ var getChessBoardString = function (size) {
                 return oddBoardRow;
             }()),
             evenBoardRow = (function () {
-                var oddBoardRow = "";
+                var evenBoardRow = "";
                 var size2 = size;
                 for (;size2 !== 0; size2--) {
-                    oddBoardRow += (size2 % 2 === 0 ? " " : "#");
+                    evenBoardRow += (size2 % 2 === 0 ? " " : "#");
                 };
-                return oddBoardRow;
+                return evenBoardRow;
             }()),
             currentBoardRow = 1;
         for (; currentBoardRow <= size; currentBoardRow++) {
